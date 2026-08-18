@@ -204,6 +204,14 @@ section{
 }
 .latest-release p{color:#999}
 
+.radio-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:18px;
+}
+.radio-widget h3,
+.radio-artist h3{margin:8px 0 14px}
+.radio-widget aisa-radio{display:block;margin-top:18px}
 .info-row{
   display:flex;
   justify-content:space-between;
@@ -243,6 +251,7 @@ footer{
   .grid,.profile{grid-template-columns:1fr}
   .latest-release{grid-template-columns:1fr}
   .music-main{grid-template-columns:1fr;text-align:center}
+  .radio-grid{grid-template-columns:1fr}
   .music-icon{margin:auto}
   .music-main{
   display:grid;
@@ -459,11 +468,45 @@ footer{
 <section id="radio">
   <div class="container">
 
-    <h2 class="section-title">RADIO / 放送履歴</h2>
-    <p class="section-lead">FM and media broadcast archive.</p>
+    <h2 class="section-title">RADIO / 放送</h2>
+    <p class="section-lead">AISA Radio ALPS and RYU:GiN on AISA.</p>
 
-    <div class="card">
+    <div class="radio-grid">
 
+      <div class="card radio-widget">
+        <div class="release-label">AISA RADIO ALPS</div>
+        <h3>Listen Live</h3>
+
+        <script src="https://aisa.radioalps.com/widget/aisa-radio.js"></script>
+        <aisa-radio
+          channel="select"
+          theme="dark"
+          accent-color="#f2c94c"
+          show-channels="true">
+        </aisa-radio>
+      </div>
+
+      <div class="card radio-artist">
+        <div class="release-label">RYU:GiN ON AISA</div>
+        <h3>RYU:GiN</h3>
+        <p>
+          AISA Radio ALPSに掲載されている
+          RYU:GiNのアーティストページ。
+        </p>
+
+        <a
+          class="btn primary"
+          href="https://aisa.radioalps.com/device/ryugin"
+          target="_blank"
+          rel="noopener"
+        >
+          RYU:GiN ON AISA
+        </a>
+      </div>
+
+    </div>
+
+    <div class="card" style="margin-top:18px;">
       <div class="info-row">
         <div>
           <strong>BROADCAST HISTORY</strong><br>
@@ -473,9 +516,8 @@ footer{
       </div>
 
       <p style="color:#aaa;margin-bottom:0;">
-        FMでオンエアされた楽曲や放送実績を記録します。
+        FMでオンエアされた楽曲や放送実績をここに記録します。
       </p>
-
     </div>
 
   </div>
