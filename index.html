@@ -212,17 +212,38 @@ section{
   color:var(--accent);
 }
 .artist-profile{
+  display:none;
+}
+.artist-profile:target{
+  display:grid;
   margin-top:70px;
   padding-top:45px;
   padding-bottom:45px;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  display:grid;
   grid-template-columns:1fr 2fr;
   gap:40px;
 }
 .artist-profile-heading h2{
   margin-top:8px;
+}
+.ryugin-player{
+  margin-bottom:32px;
+  padding:24px;
+  background:#0d0d0d;
+  border:1px solid var(--line);
+  border-radius:18px;
+}
+.ryugin-player h3{
+  margin:6px 0 0;
+}
+.ryugin-player p{
+  color:#888;
+  margin:2px 0 16px;
+}
+.ryugin-player audio{
+  width:100%;
+  display:block;
 }
 .artist-profile-copy p{
   color:#bbb;
@@ -236,7 +257,7 @@ section{
   color:#aaa;
 }
 @media(max-width:760px){
-  .artist-profile{
+  .artist-profile:target{
     grid-template-columns:1fr;
     gap:18px;
     margin-top:50px;
@@ -499,6 +520,16 @@ footer{
   <div class="artist-profile-heading">
     <p class="statement-label">RYU:GiN / PROFILE</p>
     <h2 class="section-title">RYU:GiN</h2>
+  </div>
+
+  <div class="ryugin-player">
+    <div class="release-label">RYU:GiN / THEME</div>
+    <h3>My Name Is RYU:GiN</h3>
+    <p>Produced by ChatGPT</p>
+    <audio controls preload="metadata">
+      <source src="audio/my-name-is-ryugin.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
 
   <div class="artist-profile-copy">
