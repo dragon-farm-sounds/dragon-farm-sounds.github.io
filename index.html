@@ -204,6 +204,35 @@ section{
 }
 .latest-release p{color:#999}
 
+.broadcast-list{
+  display:grid;
+  gap:14px;
+}
+.broadcast-item{
+  padding:22px 24px;
+}
+.broadcast-date{
+  color:var(--accent);
+  font-size:.8rem;
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.broadcast-item h3{
+  margin:5px 0 4px;
+}
+.broadcast-song{
+  color:#bbb;
+  margin:0 0 15px;
+}
+.broadcast-links{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.broadcast-links .btn{
+  padding:8px 14px;
+  font-size:.78rem;
+}
 .radio-grid{
   display:grid;
   grid-template-columns:1.4fr 1fr;
@@ -251,7 +280,36 @@ footer{
   .grid,.profile{grid-template-columns:1fr}
   .latest-release{grid-template-columns:1fr}
   .music-main{grid-template-columns:1fr;text-align:center}
-  .radio-grid{grid-template-columns:1fr}
+  .broadcast-list{
+  display:grid;
+  gap:14px;
+}
+.broadcast-item{
+  padding:22px 24px;
+}
+.broadcast-date{
+  color:var(--accent);
+  font-size:.8rem;
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.broadcast-item h3{
+  margin:5px 0 4px;
+}
+.broadcast-song{
+  color:#bbb;
+  margin:0 0 15px;
+}
+.broadcast-links{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.broadcast-links .btn{
+  padding:8px 14px;
+  font-size:.78rem;
+}
+.radio-grid{grid-template-columns:1fr}
   .music-icon{margin:auto}
   .music-main{
   display:grid;
@@ -506,18 +564,38 @@ footer{
 
     </div>
 
-    <div class="card" style="margin-top:18px;">
-      <div class="info-row">
-        <div>
-          <strong>BROADCAST HISTORY</strong><br>
-          <small>FM / Radio / Media</small>
-        </div>
-        <span>📻</span>
-      </div>
+    <div class="broadcast-list" style="margin-top:18px;">
 
-      <p style="color:#aaa;margin-bottom:0;">
-        FMでオンエアされた楽曲や放送実績をここに記録します。
-      </p>
+      <article class="card broadcast-item">
+        <div class="broadcast-date">2026/03/13</div>
+        <h3>ラジオ川越「AIサウンドサイファー」</h3>
+        <p class="broadcast-song">I Want To… (Japanese Ver.) feat. YONA</p>
+        <div class="broadcast-links">
+          <a class="btn" href="https://music.apple.com/jp/song/i-want-to-japanese-version/1879918678" target="_blank" rel="noopener">APPLE MUSIC</a>
+          <a class="btn" href="https://youtu.be/h9ccJnCBnAU" target="_blank" rel="noopener">YOUTUBE</a>
+        </div>
+      </article>
+
+      <article class="card broadcast-item">
+        <div class="broadcast-date">2026/04/24</div>
+        <h3>ラジオ川越「AIサウンドサイファー」</h3>
+        <p class="broadcast-song">嘘</p>
+        <div class="broadcast-links">
+          <a class="btn" href="https://music.apple.com/jp/song/%E5%98%98/6766048800" target="_blank" rel="noopener">APPLE MUSIC</a>
+          <a class="btn" href="https://youtu.be/vDE7ESxcblQ" target="_blank" rel="noopener">YOUTUBE</a>
+        </div>
+      </article>
+
+      <article class="card broadcast-item">
+        <div class="broadcast-date">2026/08/17</div>
+        <h3>FMかほく</h3>
+        <p class="broadcast-song">Komorebi feat. 鈴 -RiN- (Reggae Mix)</p>
+        <div class="broadcast-links">
+          <a class="btn" href="https://music.apple.com/jp/song/komorebi-feat-%E9%88%B4-rin-reggae-mix/6787403296" target="_blank" rel="noopener">APPLE MUSIC</a>
+          <a class="btn" href="https://youtu.be/d0seDbbo0wI" target="_blank" rel="noopener">YOUTUBE</a>
+        </div>
+      </article>
+
     </div>
 
   </div>
