@@ -150,6 +150,60 @@ section{
 }
 .profile p{color:#bbb}
 
+/* Members layout */
+.members-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap:18px;
+  align-items:stretch;
+}
+.member-card{
+  display:block;
+  min-height:185px;
+  padding:28px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:18px;
+  color:inherit;
+  text-decoration:none;
+  transition:transform .2s,border-color .2s;
+}
+.member-card:hover{
+  transform:translateY(-3px);
+  border-color:#666;
+}
+.member-card-ryugin{
+  grid-row:1 / 3;
+  min-height:388px;
+}
+.member-role{
+  color:var(--accent);
+  font-size:.78rem;
+  letter-spacing:.08em;
+  font-weight:700;
+}
+.member-card h3{
+  margin:8px 0 22px;
+  font-size:1.45rem;
+}
+.member-card p{
+  color:#bbb;
+}
+.member-profiles{
+  margin-top:50px;
+}
+.member-profile{
+  display:none;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+  padding:45px 0;
+  border-top:1px solid var(--line);
+}
+.member-profile:target{
+  display:grid;
+}
+
 .member{min-height:185px}
 .member .role{
   color:var(--accent);
@@ -614,84 +668,14 @@ footer{
     <p class="section-lead">Dragon Farm Sounds creative members.</p>
 
     <div class="members-grid">
-      <a class="member-card member-card-ryugin" href="#member-ryugin">
-        <div class="member-role">PRODUCER / AI MUSIC CREATOR</div>
-        <h3>RYU:GiN／りゅう：じん</h3>
-        <p>Dragon Farm Sounds producer and artist.</p>
-      </a>
-
-      <a class="member-card" href="#member-rin">
-        <div class="member-role">MEMBER</div>
-        <h3>鈴 -RiN-／りん</h3>
-        <p>Artist project of Dragon Farm Sounds.</p>
-      </a>
-
-      <a class="member-card" href="#member-yona">
-        <div class="member-role">MEMBER</div>
-        <h3>YONA／よな</h3>
-        <p>Artist project of Dragon Farm Sounds.</p>
-      </a>
-
-      <a class="member-card" href="#member-chokka">
-        <div class="member-role">MEMBER</div>
-        <h3>DJ CHOKKA／ちょっか</h3>
-        <p>DJ, vocalist and remix project of Dragon Farm Sounds.</p>
-      </a>
-
-      <a class="member-card" href="#member-hana">
-        <div class="member-role">MEMBER</div>
-        <h3>S-0087 [Hana]／はな</h3>
-        <p>Android singer project of Dragon Farm Sounds.</p>
-      </a>
+      <a class="member-card " href="members/hana.html">
+  <div class="member-role">MEMBER / ANDROID SINGER PROJECT</div>
+  <h3>S-0087 [Hana]／はな</h3>
+  <p>Android singer project of Dragon Farm Sounds.</p>
+</a>
     </div>
 
-    <div class="member-profiles">
-      <article id="member-ryugin" class="member-profile">
-        <div>
-          <div class="member-role">PRODUCER / AI MUSIC CREATOR</div>
-          <h2>RYU:GiN／りゅう：じん</h2>
-        </div>
-        <div>
-          <p>Dragon Farm Sounds producer and artist.</p>
-          <p>RYU:GiNの音楽は、いわば「音のクラフトジン」。和の音色、EDMのビート、AIテクノロジーなど、異なる要素を組み合わせながら、自分だけのサウンドをつくっています。</p>
-          <p>Trance、Reggae、Hip-Hopなど、ジャンルにとらわれず、その時々のアイデアを自由に音楽へ落とし込んでいます。</p>
-          <div class="profile-en">
-            <p>RYU:GiN’s music is, in a sense, a craft gin of sound. By combining different elements such as Japanese sounds, EDM beats, and AI technology, RYU:GiN creates a sound of his own.</p>
-            <p>From Trance, Reggae, and Hip-Hop to other genres, RYU:GiN is not bound by genre, freely turning each idea into music.</p>
-          </div>
-          <div class="ryugin-player">
-            <div class="release-label">RYU:GiN / THEME</div>
-            <h3>My Name Is RYU:GiN</h3>
-            <p>Produced by ChatGPT</p>
-            <audio controls preload="metadata">
-              <source src="audio/my-name-is-ryugin.mp3" type="audio/mpeg">
-            </audio>
-          </div>
-        </div>
-      </article>
-
-      <article id="member-rin" class="member-profile">
-        <div><div class="member-role">MEMBER</div><h2>鈴 -RiN-／りん</h2></div>
-        <div><p>Artist project of Dragon Farm Sounds.</p></div>
-      </article>
-
-      <article id="member-yona" class="member-profile">
-        <div><div class="member-role">MEMBER</div><h2>YONA／よな</h2></div>
-        <div><p>Artist project of Dragon Farm Sounds.</p></div>
-      </article>
-
-      <article id="member-chokka" class="member-profile">
-        <div><div class="member-role">MEMBER</div><h2>DJ CHOKKA／ちょっか</h2></div>
-        <div><p>DJ, vocalist and remix project of Dragon Farm Sounds.</p></div>
-      </article>
-
-      <article id="member-hana" class="member-profile">
-        <div><div class="member-role">MEMBER</div><h2>S-0087 [Hana]／はな</h2></div>
-        <div><p>Android singer project of Dragon Farm Sounds.</p></div>
-      </article>
-    </div>
-  </div>
-</section>
+    </section>
 
 <section id="music">
   <div class="container">
