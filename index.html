@@ -3,16 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="RYU:GiN / Dragon Farm Sounds Official Website">
-<title>RYU:GiN | Dragon Farm Sounds</title>
+
+<meta name="description" content="Dragon Farm Sounds Official Website">
+
+<title>Dragon Farm Sounds</title>
 
 <style>
+
 :root{
-  --bg:#070707;
-  --panel:#111;
+  --bg:#050505;
+  --panel:#101010;
   --text:#f5f5f5;
-  --muted:#aaa;
-  --line:#2a2a2a;
+  --muted:#a5a5a5;
+  --line:#292929;
   --accent:#f2c94c;
 }
 
@@ -38,52 +41,44 @@ a{
 }
 
 .container{
-  width:min(1080px,92%);
+  width:min(1120px,92%);
   margin:auto;
 }
+
+
+/* HEADER */
 
 header{
   position:sticky;
   top:0;
-  z-index:10;
-  background:rgba(7,7,7,.9);
-  backdrop-filter:blur(12px);
+  z-index:20;
+  background:rgba(5,5,5,.94);
+  backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
 }
 
 .nav{
-  min-height:68px;
+  min-height:82px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:20px;
+  gap:24px;
 }
 
-/* Logo */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-weight:800;
-  letter-spacing:.08em;
-  font-size:1.05rem;
-}
-
-.logo img{
-  width:36px;
-  height:36px;
+.brand img{
+  width:78px;
+  height:78px;
   object-fit:contain;
-  border-radius:8px;
-}
-
-.logo span{
-  color:var(--accent);
+  display:block;
 }
 
 nav{
   display:flex;
-  gap:20px;
-  font-size:.9rem;
+  gap:18px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+  font-size:.78rem;
+  letter-spacing:.08em;
 }
 
 nav a{
@@ -94,20 +89,24 @@ nav a:hover{
   color:#fff;
 }
 
+
+/* HERO */
+
 .hero{
-  min-height:82vh;
+  min-height:86vh;
   display:grid;
   place-items:center;
   text-align:center;
+
   background:
     radial-gradient(
       circle at 50% 35%,
-      rgba(242,201,76,.16),
-      transparent 28%
+      rgba(242,201,76,.12),
+      transparent 30%
     ),
     radial-gradient(
       circle at 15% 80%,
-      rgba(255,255,255,.06),
+      rgba(255,255,255,.05),
       transparent 25%
     );
 }
@@ -116,25 +115,32 @@ nav a:hover{
   padding:100px 0;
 }
 
+.hero-logo{
+  width:min(360px,76vw);
+  height:auto;
+  margin:0 auto 30px;
+  display:block;
+}
+
 .kicker{
   color:var(--accent);
   letter-spacing:.28em;
   text-transform:uppercase;
-  font-size:.78rem;
+  font-size:.75rem;
 }
 
 h1{
-  font-size:clamp(3rem,12vw,7rem);
-  line-height:.95;
-  margin:18px 0;
+  font-size:clamp(2.7rem,8vw,5.8rem);
+  line-height:1;
+  margin:16px 0;
   font-weight:900;
-  letter-spacing:-.06em;
+  letter-spacing:-.05em;
 }
 
 .hero p{
   color:#bbb;
-  max-width:650px;
-  margin:0 auto 34px;
+  max-width:700px;
+  margin:0 auto 30px;
 }
 
 .buttons{
@@ -146,7 +152,7 @@ h1{
 
 .btn{
   display:inline-block;
-  padding:12px 20px;
+  padding:11px 19px;
   border:1px solid #555;
   border-radius:999px;
   transition:.2s;
@@ -163,20 +169,26 @@ h1{
   transform:translateY(-2px);
 }
 
+
+/* SECTIONS */
+
 section{
-  padding:90px 0;
+  padding:82px 0;
   border-top:1px solid var(--line);
 }
 
 .section-title{
   font-size:2rem;
-  margin:0 0 10px;
+  margin:0 0 8px;
 }
 
 .section-lead{
   color:var(--muted);
-  margin:0 0 35px;
+  margin:0 0 30px;
 }
+
+
+/* GRID */
 
 .grid{
   display:grid;
@@ -199,29 +211,52 @@ section{
   color:#aaa;
 }
 
-.release{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px;
-  padding:20px 0;
-  border-bottom:1px solid var(--line);
+
+/* MEMBERS */
+
+.member{
+  min-height:180px;
 }
 
-.release small{
-  color:#888;
+.member .role{
+  color:var(--accent);
+  font-size:.8rem;
+  letter-spacing:.08em;
 }
+
+
+/* PROFILE */
 
 .profile{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:start;
+  gap:42px;
 }
 
 .profile p{
   color:#bbb;
 }
+
+
+/* RELEASE / EVENT / RADIO */
+
+.release,
+.event,
+.broadcast{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+}
+
+small{
+  color:#888;
+}
+
+
+/* LINKS */
 
 .links{
   display:grid;
@@ -240,6 +275,9 @@ section{
   border-color:#666;
 }
 
+
+/* FOOTER */
+
 footer{
   padding:45px 0;
   color:#777;
@@ -247,18 +285,34 @@ footer{
   border-top:1px solid var(--line);
 }
 
-@media(max-width:760px){
+
+/* MOBILE */
+
+@media(max-width:850px){
 
   nav{
     display:none;
   }
 
+  .nav{
+    min-height:70px;
+  }
+
+  .brand img{
+    width:62px;
+    height:62px;
+  }
+
   .hero{
-    min-height:76vh;
+    min-height:78vh;
   }
 
   .hero-inner{
-    padding:80px 0;
+    padding:75px 0;
+  }
+
+  .hero-logo{
+    width:min(290px,72vw);
   }
 
   .grid,
@@ -271,219 +325,613 @@ footer{
   }
 
   section{
-    padding:65px 0;
+    padding:62px 0;
   }
 
 }
+
 </style>
 </head>
 
+
 <body>
 
+
 <header>
-  <div class="container nav">
 
-    <a class="logo" href="#top">
-      <img src="logo.png" alt="Dragon Farm Sounds">
-      <span>RYU:GiN</span>
-    </a>
+<div class="container nav">
 
-    <nav>
-      <a href="#music">MUSIC</a>
-      <a href="#profile">PROFILE</a>
-      <a href="#label">D.F.S</a>
-      <a href="#links">LINKS</a>
-    </nav>
+<a class="brand" href="#top">
+<img src="logo.png" alt="Dragon Farm Sounds">
+</a>
 
-  </div>
+<nav>
+
+<a href="#about">ABOUT</a>
+
+<a href="#members">MEMBERS</a>
+
+<a href="#music">MUSIC</a>
+
+<a href="#events">EVENTS</a>
+
+<a href="#radio">RADIO</a>
+
+<a href="#shop">SHOP</a>
+
+</nav>
+
+</div>
+
 </header>
+
 
 <main id="top">
 
+
+<!-- HERO -->
+
 <section class="hero">
 
-  <div class="container hero-inner">
+<div class="container hero-inner">
 
-    <div class="kicker">
-      Dragon Farm Sounds
-    </div>
+<img
+class="hero-logo"
+src="logo.png"
+alt="Dragon Farm Sounds"
+>
 
-    <h1>RYU:GiN</h1>
+<div class="kicker">
+Cultivating sound since 2025
+</div>
 
-    <p>
-      AI music creator / artist / producer.<br>
-      Cultivating sound since 2025.
-    </p>
+<h1>
+Dragon Farm Sounds
+</h1>
 
-    <div class="buttons">
-      <a class="btn primary" href="#music">MUSIC</a>
-      <a class="btn" href="#profile">PROFILE</a>
-    </div>
+<p>
+AI music creator / artist / producer RYU:GiN and the creative members of Dragon Farm Sounds.
+</p>
 
-  </div>
+<div class="buttons">
+
+<a class="btn primary" href="#music">
+MUSIC
+</a>
+
+<a class="btn" href="#members">
+MEMBERS
+</a>
+
+</div>
+
+</div>
 
 </section>
 
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<div class="container profile">
+
+<div>
+
+<h2 class="section-title">
+ABOUT / 概要
+</h2>
+
+<p class="section-lead">
+Dragon Farm Sounds
+</p>
+
+</div>
+
+
+<div>
+
+<p>
+Dragon Farm Sounds is an independent music and creative project led by RYU:GiN.
+</p>
+
+<p>
+RYU:GiN works as an AI Music Creator / Producer,
+creating songs and projects through songwriting,
+AI-assisted music production and creative direction.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MEMBERS -->
+
+<section id="members">
+
+<div class="container">
+
+<h2 class="section-title">
+MEMBERS / メンバー
+</h2>
+
+<p class="section-lead">
+Dragon Farm Sounds creative members.
+</p>
+
+
+<div class="grid">
+
+
+<article class="card member">
+
+<div class="role">
+PRODUCER / AI MUSIC CREATOR
+</div>
+
+<h3>
+RYU:GiN
+</h3>
+
+<p>
+Dragon Farm Sounds producer and artist.
+</p>
+
+</article>
+
+
+<article class="card member">
+
+<div class="role">
+MEMBER
+</div>
+
+<h3>
+鈴 -RiN
+</h3>
+
+<p>
+Artist project of Dragon Farm Sounds.
+</p>
+
+</article>
+
+
+<article class="card member">
+
+<div class="role">
+MEMBER
+</div>
+
+<h3>
+YONA
+</h3>
+
+<p>
+Artist project of Dragon Farm Sounds.
+</p>
+
+</article>
+
+
+<article class="card member">
+
+<div class="role">
+MEMBER
+</div>
+
+<h3>
+DJ CHOKKA
+</h3>
+
+<p>
+DJ and remix project of Dragon Farm Sounds.
+</p>
+
+</article>
+
+
+<article class="card member">
+
+<div class="role">
+MEMBER
+</div>
+
+<h3>
+S-0087 [Hana]
+</h3>
+
+<p>
+Android singer project of Dragon Farm Sounds.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MUSIC -->
 
 <section id="music">
 
-  <div class="container">
+<div class="container">
 
-    <h2 class="section-title">Music</h2>
+<h2 class="section-title">
+MUSIC / 音楽
+</h2>
 
-    <p class="section-lead">
-      Latest releases and projects.
-    </p>
+<p class="section-lead">
+Releases and music projects.
+</p>
 
-    <div class="release">
 
-      <div>
-        <strong>NEW RELEASE</strong><br>
-        <small>Latest music from RYU:GiN</small>
-      </div>
+<div class="release">
 
-      <a class="btn" href="#links">
-        LISTEN
-      </a>
+<div>
 
-    </div>
+<strong>
+NEW RELEASE
+</strong>
 
-    <div class="grid" style="margin-top:28px">
+<br>
 
-      <article class="card">
-        <h3>Spring Awakening</h3>
-        <p>EP / 5 tracks</p>
-      </article>
+<small>
+Latest music from Dragon Farm Sounds
+</small>
 
-      <article class="card">
-        <h3>NEW NOSTALGIC: 1987</h3>
-        <p>
-          Synthpop project inspired by the sounds of 1987.
-        </p>
-      </article>
+</div>
 
-      <article class="card">
-        <h3>Japanese Gods Anthem</h3>
-        <p>
-          A Japanese gods inspired music series.
-        </p>
-      </article>
+<a class="btn" href="#links">
+LISTEN
+</a>
 
-    </div>
+</div>
 
-  </div>
+
+<div class="grid" style="margin-top:28px">
+
+
+<article class="card">
+
+<h3>
+春の輪廻 – Spring Awakening –
+</h3>
+
+<p>
+EP / 5 tracks
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+NEW NOSTALGIC: 1987
+</h3>
+
+<p>
+Synthpop project inspired by the sounds of 1987.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+Japanese Gods Anthem
+</h3>
+
+<p>
+Japanese gods inspired music series.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- EVENTS -->
+
+<section id="events">
+
+<div class="container">
+
+<h2 class="section-title">
+EVENTS / イベント
+</h2>
+
+<p class="section-lead">
+Upcoming events and past appearances.
+</p>
+
+
+<div class="card">
+
+<div class="event">
+
+<div>
+
+<strong>
+EVENT CALENDAR
+</strong>
+
+<br>
+
+<small>
+Event information will be listed here.
+</small>
+
+</div>
+
+<span>
+📅
+</span>
+
+</div>
+
+
+<p style="color:#aaa;margin-bottom:0">
+
+出演イベント、開催日、会場、出演メンバーなどを掲載します。
+
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 
-<section id="profile">
+<!-- RADIO -->
 
-  <div class="container profile">
+<section id="radio">
 
-    <div>
+<div class="container">
 
-      <h2 class="section-title">
-        RYU:GiN
-      </h2>
+<h2 class="section-title">
+RADIO / 放送履歴
+</h2>
 
-      <p class="section-lead">
-        Artist / Music Producer
-      </p>
+<p class="section-lead">
+FM and media broadcast archive.
+</p>
 
-    </div>
 
-    <div>
+<div class="card">
 
-      <p>
-        RYU:GiN is an independent artist and music producer creating original music across electronic, reggae, trance, synthpop and other styles.
-      </p>
+<div class="broadcast">
 
-      <p>
-        From Japanese-inspired sounds to modern electronic production, each project explores a different side of sound.
-      </p>
+<div>
 
-    </div>
+<strong>
+BROADCAST HISTORY
+</strong>
 
-  </div>
+<br>
+
+<small>
+FM / Radio / Media appearances
+</small>
+
+</div>
+
+<span>
+📻
+</span>
+
+</div>
+
+
+<p style="color:#aaa;margin-bottom:0">
+
+FMでのオンエア、出演、紹介などの放送実績を記録します。
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<div class="container">
+
+<h2 class="section-title">
+PROJECTS / プロジェクト
+</h2>
+
+<p class="section-lead">
+Creative projects from Dragon Farm Sounds.
+</p>
+
+
+<div class="grid">
+
+
+<article class="card">
+
+<h3>
+AI Music for Peace
+</h3>
+
+<p>
+Music project centered on peace.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+Japanese Gods
+</h3>
+
+<p>
+Japanese-inspired music project.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+NEW NOSTALGIC: 1987
+</h3>
+
+<p>
+Nostalgic synthpop project.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
 
 
-<section id="label">
+<!-- SHOP -->
 
-  <div class="container">
+<section id="shop">
 
-    <h2 class="section-title">
-      Dragon Farm Sounds
-    </h2>
+<div class="container">
 
-    <p class="section-lead">
-      Independent music label / creative project
-    </p>
+<h2 class="section-title">
+SHOP / 物販
+</h2>
 
-    <div class="card">
+<p class="section-lead">
+Dragon Farm Sounds official merchandise.
+</p>
 
-      <h3>
-        Cultivating sound since 2025.
-      </h3>
 
-      <p>
-        Music, visual projects and experiments from Dragon Farm Sounds.
-      </p>
+<div class="grid">
 
-    </div>
 
-  </div>
+<article class="card">
+
+<h3>
+T-SHIRTS
+</h3>
+
+<p>
+Official Dragon Farm Sounds apparel.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+TOWELS
+</h3>
+
+<p>
+Event and official merchandise.
+</p>
+
+</article>
+
+
+<article class="card">
+
+<h3>
+GOODS
+</h3>
+
+<p>
+Keys, accessories and other items.
+</p>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
 
+
+<!-- LINKS -->
 
 <section id="links">
 
-  <div class="container">
+<div class="container">
 
-    <h2 class="section-title">
-      Links
-    </h2>
+<h2 class="section-title">
+LINKS / リンク
+</h2>
 
-    <p class="section-lead">
-      Official music and social channels.
-    </p>
+<p class="section-lead">
+Official music and social channels.
+</p>
 
-    <div class="links">
 
-      <a class="link" href="#" aria-label="Spotify">
-        Spotify
-      </a>
+<div class="links">
 
-      <a class="link" href="#" aria-label="YouTube">
-        YouTube
-      </a>
+<a class="link" href="#">
+Spotify
+</a>
 
-      <a class="link" href="#" aria-label="Instagram">
-        Instagram
-      </a>
+<a class="link" href="#">
+YouTube
+</a>
 
-      <a class="link" href="#" aria-label="X">
-        X
-      </a>
+<a class="link" href="#">
+Instagram
+</a>
 
-    </div>
+<a class="link" href="#">
+X
+</a>
 
-  </div>
+</div>
+
+</div>
 
 </section>
+
 
 </main>
 
 
 <footer>
 
-  <div class="container">
-    © 2026 Dragon Farm Sounds / RYU:GiN
-  </div>
+<div class="container">
+
+© 2026 Dragon Farm Sounds
+
+</div>
 
 </footer>
+
 
 </body>
 </html>
