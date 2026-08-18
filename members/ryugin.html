@@ -103,82 +103,84 @@ e9fbc61a-c763-4df3-9ed7-e6ba9efa1403.png
 
 64d1b68b-a33f-4254-8214-425d6954972c.png
 
-あー、これで原因が完全に分かったばい。
-俺が作った前の index.html の修正処理にミスがあって、最後に処理したHanaだけ残ってしまっとった。 ごめん。
-
-今、index.html を修正し直した。
-
-正しくはこうなるばい。
-
-RYU:GiN → 左側を縦2倍
-
-鈴 -RiN- → 右上
-
-YONA → 右上の隣
-
-DJ CHOKKA → 右下
-
-S-0087 [Hana] → 右下の隣
-
-全員の枠あり
-
-全員クリックで個別ページへ
-
-トップには自己紹介本文を置かない
-
-
-https://images.openai.com/static-rsc-4/xmhHHvFwYkoYnSqelXOxpAiWU9a9Pqzrdot4rwTRcGd_-Jxj2s4Hj4rk1WogK0vCEzLkq7UUhKrCVZl6Zu0CUky63TfFURsGn1TAziaVhpFAWYiBLWJWKxN8mNNoE5lzLXXYNetOHjkRSVwn0SWhKj1ZFZNIrLcY0F-WTANbSXtHkAJ05Q5Dwzw6D3jkVpmt?purpose=fullsize
-
-https://images.openai.com/static-rsc-4/lCwjxSfprBtpzEEHMFoQh229hOz-ZdFFkp60ze-Rkdr9wuu32sFyogsOMlHpfgHQEmJYfFDu__S09t27rr4Hjh1y-vKdhOua7s2h2l3rPNTfEb8B1vlPBOHgg4-jknxJIErTRZJoJ6pPK0U4JllGG1798x0OI5UZiMVT38X4l-S6AR-L770rKImWp3GqOgnK?purpose=fullsize
-
-https://images.openai.com/static-rsc-4/jBKhdk8N1xf4dU8-nCJtCP8xkoJnm4DTcTFanzh2CF8LYMa-YV73CsXCNnjvj3vsRd4q6TieVvmJ0B8fLbb6t_4opyQp0ZQpKLjcyhvBYmTTP1Sjwmtvzrxnh4SPgPI10UvNCtinYewcCZ1sPQ1Bu0rnlYFyTE0EFyfFP9DFl2jPcK2ksMzvvncc5zpJcvhO?purpose=fullsize
-5
-いまやること
-GitHubで、
-
-Add file → Upload files
-
-から今回の index.html だけをアップロードしてよか。
-
-
-ただし今回は、ZIP全部をもう一度入れなくてよか。
-
-まず展開して、
-
-index.html
-
-だけをGitHubへアップロード。
-
-そして Commit changes。
-
-これでHanaだけになる問題は直るばい。
-
-
-
-index.html
-
-これだけくれればいいじゃん
-
-そうたい😂
-今回は index.html だけでよか。
-
-
-これをGitHubの index.html と差し替えて Commit changes すればOKたい。 
-
-
-
-
 a5677fe5-abc9-4acb-9f3b-a9b609a1f1e2.png
 Produced by ChatGPT  消そうよ
 
-うん、消そう😂
-「Produced by ChatGPT」は完全に削除したばい。
+それなら、AISAへ誘導する方式がかなりいいと思うばい。
+
+AISAはアーティストの楽曲をアップロードして配信できるし、試聴自体は無料。公式の案内でもMP3アップロードに対応しとる。
+
+だからサイト側は、
+
+RYU:GiNページ
+→ 「AISAで聴く」ボタン
+→ RYU:GiNのAISAページ
+
+にする。
+
+これなら GitHubにMP3を置かなくてよくなる。
+
+ただし大事なのは、AISAにアップロードした音源もストリーミング配信される以上、絶対に保存できないわけではないこと。
+でも少なくともGitHubリポジトリにMP3ファイルを直接公開するよりは、サイトの構成としてずっと自然たい。
+
+今の my-name-is-ryugin.mp3 はGitHubから削除して、RYU:GiNページには AISAで聴くだけ置くのが一番スッキリするばい。
 
 
-これだけGitHubの members/ryugin.html と差し替えればOKたい。
+
+
+広告
+
+ならそうします
+
+了解たい 👍
+
+じゃあ今後は、
+
+RYU:GiN個別ページ
+→ 「AISAで聴く」
+→ RYU:GiNのAISAページ
+
+という形にして、GitHubにはMP3を置かない構成にしよう。
+
+今のMP3はGitHubから削除して、プレイヤーもAISAへのリンクに変更すればスッキリするばい。
+
+
+https://aisa.radioalps.com/music/track/5316これAISA
+
+うん、これがAISAの個別トラックページたい。
+
+
+RYU:GiNのプロフィールページには、MP3プレイヤーの代わりにこの曲への 「AISAで聴く」 ボタンを置けばよか。
+
+これならGitHub側に音源ファイルを置かずに済むけん、今の目的にはこっちが合っとるばい。
+
+
+お願いします
+
+よし、変更したばい👌
+
+RYU:GiNの個別ページを、
+
+「My Name Is RYU:GiN」
+→ AISAで聴く
+
+という形に変更。
+
+GitHub側にはMP3を置かない構成にしてあるけん、これでスッキリたい。
+
+
+これをGitHubの
+
+members/ryugin.html
+
+と差し替えて、Commitすれば完了ばい。 
 
 
 
+
+
+
+広告
 
 ryugin.html
 
