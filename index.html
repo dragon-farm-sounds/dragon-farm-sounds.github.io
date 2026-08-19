@@ -279,51 +279,6 @@ section{
 .hero-name-link:hover{
   color:var(--accent);
 }
-.artist-profile{
-  display:none;
-}
-.artist-profile:target{
-  display:grid;
-  margin-top:70px;
-  padding-top:45px;
-  padding-bottom:45px;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-  grid-template-columns:1fr 2fr;
-  gap:40px;
-}
-.artist-profile-heading h2{
-  margin-top:8px;
-}
-.ryugin-player{
-  margin-bottom:32px;
-  padding:24px;
-  background:#0d0d0d;
-  border:1px solid var(--line);
-  border-radius:18px;
-}
-.ryugin-player h3{
-  margin:6px 0 0;
-}
-.ryugin-player p{
-  color:#888;
-  margin:2px 0 16px;
-}
-.ryugin-player audio{
-  width:100%;
-  display:block;
-}
-.artist-profile-copy p{
-  color:#bbb;
-}
-.profile-en{
-  margin-top:28px;
-  padding-top:24px;
-  border-top:1px solid var(--line);
-}
-.profile-en p{
-  color:#aaa;
-}
 @media(max-width:760px){
   .members-grid{
     grid-template-columns:1fr;
@@ -354,34 +309,6 @@ section{
 }
 .about-jp p{
   color:#aaa;
-}
-.artist-statement{
-  display:grid;
-  grid-template-columns:1fr 2fr;
-  gap:40px;
-  margin-top:70px;
-  padding-top:45px;
-  border-top:1px solid var(--line);
-}
-.statement-label{
-  color:var(--accent);
-  font-size:.78rem;
-  letter-spacing:.12em;
-  font-weight:700;
-}
-.statement-en{
-  color:#ddd;
-  font-size:1.08rem;
-  line-height:1.9;
-  margin-top:0;
-}
-.statement-en em{
-  color:var(--accent);
-  font-style:normal;
-}
-.statement-jp{
-  color:#aaa;
-  line-height:1.9;
 }
 @media(max-width:760px){
   .artist-statement{
@@ -597,70 +524,7 @@ footer{
 
   </div>
 
-  <div id="ryugin-profile" class="container artist-profile">
-  <div class="artist-profile-heading">
-    <p class="statement-label">RYU:GiN / PROFILE</p>
-    <h2 class="section-title">RYU:GiN</h2>
-  </div>
-
-  <div class="ryugin-player">
-    <div class="release-label">RYU:GiN / THEME</div>
-    <h3>My Name Is RYU:GiN</h3>
-    <p>Produced by ChatGPT</p>
-    <audio controls preload="metadata">
-      <source src="audio/my-name-is-ryugin.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-  </div>
-
-  <div class="artist-profile-copy">
-    <p>
-      RYU:GiNの音楽は、いわば「音のクラフトジン」。<br>
-      和の音色、EDMのビート、AIテクノロジーなど、異なる要素を組み合わせながら、
-      自分だけのサウンドをつくっています。
-    </p>
-    <p>
-      Trance、Reggae、Hip-Hopなど、ジャンルにとらわれず、
-      その時々のアイデアを自由に音楽へ落とし込んでいます。
-    </p>
-
-    <div class="profile-en">
-      <p>
-        RYU:GiN’s music is, in a sense, a craft gin of sound.<br>
-        By combining different elements such as Japanese sounds, EDM beats, and AI technology,
-        RYU:GiN creates a sound of his own.
-      </p>
-      <p>
-        From Trance, Reggae, and Hip-Hop to other genres, RYU:GiN is not bound by genre,
-        freely turning each idea into music.
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="container artist-statement">
-    <div>
-      <p class="statement-label">RYU:GiN / ARTIST STATEMENT</p>
-    </div>
-
-    <div>
-      <p class="statement-en">
-        What RYU:GiN creates is, in essence, a kind of
-        <em>craft gin of sound</em>.
-        Just as gin is crafted by carefully blending diverse botanicals to create
-        its own aroma and character, RYU:GiN precisely blends Japanese sounds,
-        EDM beats and near-future AI technology to distill new sounds.
-      </p>
-
-      <p class="statement-jp">
-        RYU:GiNが創り出すのは、まさに「音のクラフトジン」。
-        多彩なボタニカルを調合して香りを生み出すジンのように、
-        和の音色、EDMのビート、近未来AIテクノロジーを緻密にブレンドし、
-        新しいサウンドを蒸留しています。
-      </p>
-    </div>
-  </div>
-</section>
+  </section>
 
 <section id="members">
   <div class="container">
