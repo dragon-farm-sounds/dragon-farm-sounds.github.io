@@ -153,10 +153,39 @@ section{
 /* Members layout */
 .members-grid{
   display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
+  grid-template-columns:1fr 1fr;
   gap:18px;
   align-items:stretch;
+}
+.members-left{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+.members-left .member-card-ryugin{
+  min-height:185px;
+  height:185px;
+}
+.member-group-photo{
+  height:185px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--panel);
+}
+.member-group-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.members-right{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.members-right .member-card{
+  min-height:185px;
 }
 .member-card{
   display:block;
@@ -174,8 +203,7 @@ section{
   border-color:#666;
 }
 .member-card-ryugin{
-  grid-row:1 / 3;
-  min-height:388px;
+  min-height:185px;
 }
 .member-role{
   color:var(--accent);
@@ -282,11 +310,16 @@ section{
 @media(max-width:760px){
   .members-grid{
     grid-template-columns:1fr;
-    grid-template-rows:auto;
   }
-  .member-card-ryugin{
-    grid-row:auto;
-    min-height:230px;
+  .members-left .member-card-ryugin{
+    height:185px;
+  }
+  .member-group-photo{
+    height:auto;
+    aspect-ratio:16 / 9;
+  }
+  .members-right{
+    grid-template-columns:1fr;
   }
   .member-profile{
     grid-template-columns:1fr;
@@ -532,35 +565,43 @@ footer{
     <p class="section-lead">Dragon Farm Sounds creative members.</p>
 
     <div class="members-grid">
-      <a class="member-card member-card-ryugin" href="members/ryugin.html">
-        <div class="member-role">PRODUCER / AI MUSIC CREATOR</div>
-        <h3>RYU:GiN／りゅう：じん</h3>
-        <p>Dragon Farm Sounds producer and artist.</p>
-      </a>
+      <div class="members-left">
+        <a class="member-card member-card-ryugin" href="members/ryugin.html">
+          <div class="member-role">PRODUCER / AI MUSIC CREATOR</div>
+          <h3>RYU:GiN／りゅう：じん</h3>
+          <p>Dragon Farm Sounds producer and artist.</p>
+        </a>
 
-      <a class="member-card" href="members/rin.html">
-        <div class="member-role">MEMBER</div>
-        <h3>鈴 -RiN-／りん</h3>
-        <p>Artist project of Dragon Farm Sounds.</p>
-      </a>
+        <div class="member-group-photo">
+          <img src="members-group.png" alt="Dragon Farm Sounds members">
+        </div>
+      </div>
 
-      <a class="member-card" href="members/yona.html">
-        <div class="member-role">MEMBER</div>
-        <h3>YONA／よな</h3>
-        <p>Artist project of Dragon Farm Sounds.</p>
-      </a>
+      <div class="members-right">
+        <a class="member-card" href="members/rin.html">
+          <div class="member-role">MEMBER</div>
+          <h3>鈴 -RiN-／りん</h3>
+          <p>Artist project of Dragon Farm Sounds.</p>
+        </a>
 
-      <a class="member-card" href="members/dj-chokka.html">
-        <div class="member-role">MEMBER</div>
-        <h3>DJ CHOKKA／ちょっか</h3>
-        <p>DJ, vocalist and remix project of Dragon Farm Sounds.</p>
-      </a>
+        <a class="member-card" href="members/yona.html">
+          <div class="member-role">MEMBER</div>
+          <h3>YONA／よな</h3>
+          <p>Artist project of Dragon Farm Sounds.</p>
+        </a>
 
-      <a class="member-card" href="members/hana.html">
-        <div class="member-role">MEMBER</div>
-        <h3>S-0087 [Hana]／はな</h3>
-        <p>Android singer project of Dragon Farm Sounds.</p>
-      </a>
+        <a class="member-card" href="members/dj-chokka.html">
+          <div class="member-role">MEMBER</div>
+          <h3>DJ CHOKKA／ちょっか</h3>
+          <p>DJ, vocalist and remix project of Dragon Farm Sounds.</p>
+        </a>
+
+        <a class="member-card" href="members/hana.html">
+          <div class="member-role">MEMBER</div>
+          <h3>S-0087 [Hana]／はな</h3>
+          <p>Android singer project of Dragon Farm Sounds.</p>
+        </a>
+      </div>
     </div>
   </div>
 </section>
