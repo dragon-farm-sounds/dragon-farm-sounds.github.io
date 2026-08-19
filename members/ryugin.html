@@ -530,7 +530,18 @@ footer{
 .profile-player{margin-bottom:32px;padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:18px}
 .profile-player h2{margin:8px 0 0}
 .profile-player p{color:#888;margin:2px 0 16px}
-.profile-player audio{width:100%;display:block}
+.aisa-button{
+  display:inline-block;
+  margin-top:10px;
+  padding:12px 20px;
+  background:var(--accent);
+  color:#080808;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  transition:.2s;
+}
+.aisa-button:hover{transform:translateY(-2px)}
 .back-link{display:inline-block;margin-top:40px;color:#ccc}
 .back-link:hover{color:var(--accent)}
 @media(max-width:760px){.profile-page-inner{grid-template-columns:1fr;gap:25px}.profile-page{padding:65px 0}}
@@ -556,15 +567,12 @@ footer{
       <div class="profile-reading">／ りゅう：じん</div>
     </div>
     <div class="profile-copy">
-      
-        <div class="profile-player">
-          <div class="profile-label">RYU:GiN / THEME</div>
-          <h2>My Name Is RYU:GiN</h2>
-                    <audio controls preload="metadata">
-            <source src="../audio/my-name-is-ryugin.mp3" type="audio/mpeg">
-          </audio>
-        </div>
-      <p>RYU:GiNの音楽は、いわば「音のクラフトジン」。
+      <div class="profile-player">
+        <div class="profile-label">RYU:GiN / MUSIC</div>
+        <h2>My Name Is RYU:GiN</h2>
+        <a class="aisa-button" href="https://aisa.radioalps.com/music/track/5316" target="_blank" rel="noopener">AISAで聴く →</a>
+      </div>
+<p>RYU:GiNの音楽は、いわば「音のクラフトジン」。
 和の音色、EDMのビート、AIテクノロジーなど、異なる要素を組み合わせながら、自分だけのサウンドをつくっています。
 
 Trance、Reggae、Hip-Hopなど、ジャンルにとらわれず、その時々のアイデアを自由に音楽へ落とし込んでいます。</p>
